@@ -1,9 +1,16 @@
 package com.letscode.calculator;
-import static utils.Printer.print;
+import java.util.Scanner;
+
+import static utils.Printer.*;
 
 public class Main {
     public static void main(String[] args) {
-       calculate(4, 2);
+        Scanner Scan = new Scanner(System.in);
+        printQuestion();
+        int firstNumber = Scan.nextInt();
+        printQuestion();
+        int secondNumber = Scan.nextInt();
+       calculate(firstNumber, secondNumber);
     }
     public static void calculate(int firstNumber, int secondNumber) {
         int sum = firstNumber + secondNumber;
